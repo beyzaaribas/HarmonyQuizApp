@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/pinkbackground"
+    tools:context=".tutorialFinishActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+
+
+
+        <ImageView
+            android:onClick="leftArrowClick"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/arrow"
+            android:rotationY="-180" />
+
+        <ImageView
+            android:onClick="exitDoorClick"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/logout1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r12"
+        android:layout_marginTop="@dimen/_170sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_22sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Congratulations! You got it!"/>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="410dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/app_logo"
+        tools:layout_editor_absoluteY="-1dp" />
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="12"
+        android:rotationY="17"
+        app:srcCompat="@drawable/dancing" />
+
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="-8"
+        android:rotationY="-17"
+        app:srcCompat="@drawable/dino" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="4"
+        android:rotationY="12"
+        app:srcCompat="@drawable/dog" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginBottom="207dp"
+        android:rotation="21"
+        app:srcCompat="@drawable/musiclove" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="203dp"
+        android:rotation="-12"
+        app:srcCompat="@drawable/pop" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPiano"
+        android:layout_width="425dp"
+        android:layout_height="417dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="-161dp"
+        app:srcCompat="@drawable/pinkpiano" />
+
+
+
+</RelativeLayout>

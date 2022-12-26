@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pinkbackground"
+    tools:context=".HardQuiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+
+
+
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:onClick="leftArrowClick"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/arrow"
+            android:rotationY="-180" />
+
+        <ImageView
+            android:id="@+id/exitDoor"
+            android:onClick="exitDoorClick"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/logout1" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/quiz_timer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        app:backgroundColor="@color/pinkbackground"
+        android:indeterminate="false"
+        android:max="20"
+        android:maxHeight="@dimen/_12sdp"
+        android:minHeight="@dimen/_12sdp"
+        android:progress="10"
+        android:theme="@style/Timer"
+        app:indicatorColor="#FFC107" />
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_55sdp"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="@dimen/_130sdp">
+
+        <Button
+            android:id="@+id/btnBaslat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Start the Music" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:text="Stop the Music" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_question"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="@string/app_name"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/ansA"
+        android:onClick="onAClick"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_5sdp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_optionA"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="D"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="-33dp"/>
+
+
+
+    <Button
+
+        android:id="@+id/ansB"
+        android:onClick="onBClick"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:elevation="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_optionB"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="D"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="-33dp"/>
+
+
+
+    <Button
+        android:id="@+id/ansC"
+        android:onClick="onCClick"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:elevation="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_optionC"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="D"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="-33dp"/>
+
+
+
+    <Button
+        android:id="@+id/ansD"
+        android:onClick="onDClick"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:elevation="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_optionD"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="D"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="-33dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/nextBtn"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/next_btn_shape"
+        android:layout_marginStart="@dimen/_85sdp"
+        android:layout_marginEnd="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_35sdp">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>

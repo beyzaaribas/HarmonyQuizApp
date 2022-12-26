@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinkbackground"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="410dp"
+        android:layout_height="275dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/app_logo"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Button
+        android:id="@+id/Tbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginBottom="253dp"
+        android:backgroundTint="#FFFFFF"
+        android:rotationX="-12"
+        android:text="Tutorıal"
+        android:textAllCaps="true"
+        android:textColor="@color/pinkbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="168dp"
+        android:rotation="-12"
+        android:text="Easy"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/pinkbackground"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="168dp"
+        android:rotation="12"
+        android:text="Hard"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/pinkbackground" />
+
+    <ImageView
+        android:id="@+id/imageViewPiano"
+        android:layout_width="425dp"
+        android:layout_height="417dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="-161dp"
+        app:srcCompat="@drawable/pinkpiano" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="12"
+        android:rotationY="17"
+        app:srcCompat="@drawable/musicc" />
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="326dp"
+        android:layout_marginBottom="98dp"
+        android:rotation="-12"
+        android:rotationY="-4"
+        app:srcCompat="@drawable/pineapple" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="237dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="-8"
+        android:rotationY="-17"
+        app:srcCompat="@drawable/tilki" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginBottom="99dp"
+        android:rotation="4"
+        android:rotationY="12"
+        app:srcCompat="@drawable/dino" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginBottom="207dp"
+        android:rotation="21"
+        app:srcCompat="@drawable/unicornn" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="203dp"
+        android:rotation="-12"
+        app:srcCompat="@drawable/dog" />
+
+</RelativeLayout>
